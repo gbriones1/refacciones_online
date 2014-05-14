@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}
+
+{% block site-wrapper %}
+	{% for item in graphic_content %}
+        {{ item.get_html_code|safe }}
+	{% endfor %}
+{% endblock %}
+
+{% block header %}
+{% include 'sections/bootstrap-head.html' %}
+{% endblock %}
+
+{% block menu %}
+{% include 'sections/bootstrap-menu.html' %}
+{% endblock %}
+
+{% block navigation %}
+{% include 'sections/bootstrap-navigation.html' %}
+{% endblock %}
+
+{% block footer %}
+{% include 'sections/bootstrap-foot.html' %}
+{% endblock %}

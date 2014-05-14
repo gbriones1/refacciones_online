@@ -1,0 +1,14 @@
+{% extends "layout/register.html" %}
+
+{% block site-wrapper %}
+	{% for item in graphic_content %}
+        {{ item.get_html_code|safe }}
+	{% endfor %}
+{% endblock %}
+
+{% block menu %}
+{% include 'sections/bootstrap-menu.html' %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            {% block menu %}
+            {% endblock %}
+        </div>
+        <div id="header">
+            {% block header %}
+            {% endblock %}
+        </div>
+        <div id="content-background">
+            <div id="navigation">
+                {% block navigation %}
+                {% endblock %}
+            </div>
+            <div id="content">
+                <div id="maincolumn">
+                    {% block site-wrapper %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            {% block footer %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
